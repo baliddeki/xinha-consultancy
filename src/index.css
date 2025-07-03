@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define CSS custom properties for Xinhai colors */
+:root {
+  --xinhai-blue: #2B5A8A;
+  --xinhai-blue-light: #4A7BB7;
+  --xinhai-blue-dark: #1E4366;
+}
+
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
@@ -20,7 +27,7 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-xinhai-blue text-white hover:bg-xinhai-blue-dark focus:ring-xinhai-blue;
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
   }
   
   .btn-secondary {
@@ -28,7 +35,7 @@
   }
   
   .btn-outline {
-    @apply border-2 border-xinhai-blue text-xinhai-blue hover:bg-xinhai-blue hover:text-white focus:ring-xinhai-blue;
+    @apply border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white focus:ring-blue-500;
   }
   
   .card {
@@ -42,6 +49,47 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  /* Custom Xinhai color classes */
+  .bg-xinhai-blue {
+    background-color: var(--xinhai-blue);
+  }
+  
+  .bg-xinhai-blue-light {
+    background-color: var(--xinhai-blue-light);
+  }
+  
+  .bg-xinhai-blue-dark {
+    background-color: var(--xinhai-blue-dark);
+  }
+  
+  .text-xinhai-blue {
+    color: var(--xinhai-blue);
+  }
+  
+  .text-xinhai-blue-light {
+    color: var(--xinhai-blue-light);
+  }
+  
+  .text-xinhai-blue-dark {
+    color: var(--xinhai-blue-dark);
+  }
+  
+  .border-xinhai-blue {
+    border-color: var(--xinhai-blue);
+  }
+  
+  .hover\:bg-xinhai-blue:hover {
+    background-color: var(--xinhai-blue);
+  }
+  
+  .hover\:bg-xinhai-blue-dark:hover {
+    background-color: var(--xinhai-blue-dark);
+  }
+  
+  .focus\:ring-xinhai-blue:focus {
+    --tw-ring-color: var(--xinhai-blue);
+  }
 }
 
 @layer utilities {
@@ -54,7 +102,7 @@
   }
   
   .gradient-primary {
-    @apply bg-gradient-to-r from-xinhai-blue to-xinhai-blue-light;
+    background: linear-gradient(to right, var(--xinhai-blue), var(--xinhai-blue-light));
   }
 }
 
@@ -88,5 +136,6 @@ html {
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  @apply ring-2 ring-offset-2 ring-xinhai-blue;
+  @apply ring-2 ring-offset-2;
+  --tw-ring-color: var(--xinhai-blue);
 }
