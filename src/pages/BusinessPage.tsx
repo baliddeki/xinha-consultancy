@@ -1,6 +1,6 @@
 import React from 'react';
 import { Building, Users, Calendar, Shield, TrendingUp, Globe } from 'lucide-react';
-import { ServiceCard } from '@/components/ui';
+import { ServiceCard } from '../components/ui';
 
 const BusinessesPage: React.FC = () => {
   const businessServices = [

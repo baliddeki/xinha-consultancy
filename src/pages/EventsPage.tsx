@@ -1,6 +1,6 @@
 import React from 'react';
-import { Calendar, Users, Building, MapPin } from 'lucide-react';
-import { EventCard } from '@/components/ui';
+import { Calendar, Users, Building } from 'lucide-react';
+import { EventCard } from '../components/ui';
 
 const EventsPage: React.FC = () => {
   const upcomingEvents = [

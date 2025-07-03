@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, Building, Users, Calendar } from 'lucide-react';
-import { Button, ServiceCard } from '@/components/ui';
+import { Button, ServiceCard } from '../components/ui';
 
 const HomePage: React.FC = () => {
   const services = [

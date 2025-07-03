@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Navigation, Footer } from '@/components/layout';
-import { HomePage, BusinessesPage, EventsPage } from '@/pages';
+import { Navigation, Footer } from './components/layout';
+import { HomePage, BusinessesPage, EventsPage } from './pages';
 import { PageType } from '@/types/navigation';
 
 const App: React.FC = () => {
