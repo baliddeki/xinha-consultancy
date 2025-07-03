@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { NavigationProps, NavigationItem } from '@/types/navigation';
+import { NavigationProps, NavigationItem, PageType } from '../../types/navigation';
 
 const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,8 +11,8 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
     { id: 'events', label: 'Events' }
   ];
 
-  const handleNavigationClick = (pageId: string) => {
-    setCurrentPage(pageId as any);
+  const handleNavigationClick = (pageId: PageType) => {
+    setCurrentPage(pageId);
     setIsMenuOpen(false);
   };
 

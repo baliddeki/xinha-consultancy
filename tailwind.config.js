@@ -19,11 +19,9 @@ export default {
           800: '#1e40af',
           900: '#1e3a8a',
         },
-        xinhai: {
-          blue: '#2B5A8A',
-          'blue-light': '#4A7BB7',
-          'blue-dark': '#1E4366',
-        }
+        'xinhai-blue': '#2B5A8A',
+        'xinhai-blue-light': '#4A7BB7',
+        'xinhai-blue-dark': '#1E4366',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

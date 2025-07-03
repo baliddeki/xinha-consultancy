@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ServiceCardProps } from '@/types';
+import { ServiceCardProps } from '../../types';
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,

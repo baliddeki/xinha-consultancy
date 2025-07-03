@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar, MapPin } from 'lucide-react';
-import { EventCardProps } from '@/types';
+import { EventCardProps } from '../../types';
 
 const EventCard: React.FC<EventCardProps> = ({
   title,

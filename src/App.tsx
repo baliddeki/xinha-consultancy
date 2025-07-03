@@ -1,7 +1,8 @@
+
 import React, { useState } from 'react';
 import { Navigation, Footer } from './components/layout';
 import { HomePage, BusinessesPage, EventsPage } from './pages';
-import { PageType } from '@/types/navigation';
+import { PageType } from './types/navigation';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<PageType>('home');
@@ -31,4 +32,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
