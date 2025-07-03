@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                 <div className="w-8 h-8 bg-xinhai-blue transform rotate-45"></div>
                 <div className="absolute top-0 left-0 w-8 h-8 bg-xinhai-blue-light transform rotate-45 translate-x-2"></div>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col px-4">
                 <span className="text-xl font-bold">XINHAI</span>
                 <span className="text-xs text-gray-400">鑫海咨询</span>
               </div>
