@@ -127,12 +127,6 @@ xinhai-consultancy/
 - **Accessibility**: WCAG compliant with proper focus management
 - **Performance**: Optimized with Vite and efficient component structure
 
-## 📞 Contact Information
-
-**Xinhai Consultancy Co. Limited**
-- **Address**: Nakawa Global, Kampala, Uganda
-- **Phone**: +256 774 964 XXX
-- **Email**: info@xinhai-consulting.com
 
 ## 🤝 Contributing
 
@@ -147,5 +141,3 @@ xinhai-consultancy/
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
-
-Built with ❤️ for Xinhai Consultancy
